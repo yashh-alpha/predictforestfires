@@ -31,7 +31,7 @@ def predict_datapoint():
         isi = float(request.form["isi"])
         classes = float(request.form["classes"])
 
-        new_data_scaled = standard_scaler.transform([[temp,rh,wind,rain,ffmc,dmc,dc,isi,classesgit  ]])
+        new_data_scaled = standard_scaler.transform([[temp,rh,wind,rain,ffmc,dmc,dc,isi,classes ]])
         prediction = round(ridge_model.predict(new_data_scaled)[0],2)
 
         return render_template("home.html",prediction = prediction)
