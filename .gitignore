@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+
+.ipynb_checkpoints/
+
+# Python build files
+
+build/
+dist/
+*.egg-info/
+
+# Logs
+
+*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Environment variables
+
+.env
+
+# Flask
+
+instance/
+.webassets-cache
+
+# Model files (optional)
+
+# Uncomment if model is large or sensitive
+
+# *.pkl
+
+# VS Code
+
+.vscode/
+
+# PyCharm
+
+.idea/
+
+# Coverage reports
+
+.coverage
+htmlcov/
+
+# Temporary files
+
+*.tmp
+*.swp
+
+# SQLite database
+
+*.db
