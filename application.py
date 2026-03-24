@@ -9,7 +9,6 @@ from sklearn.preprocessing import StandardScaler
 application = Flask(__name__)
 app = application
 
-## import ridge regresson and standardscaler pickle
 
 ridge_model = pickle.load(open('models/ridge.pkl','rb'))
 standard_scaler = pickle.load(open("models/scaler.pkl",'rb'))
