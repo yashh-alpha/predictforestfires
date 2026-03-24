@@ -14,7 +14,11 @@ ridge_model = pickle.load(open('models/ridge.pkl','rb'))
 standard_scaler = pickle.load(open("models/scaler.pkl",'rb'))
 
 
-@app.route("/", methods = ['GET','POST'])
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/predictdata", methods = ['GET','POST'])
 def predict_datapoint():
     if request.method == "POST":
         temp = float(request.form["temperature"])
